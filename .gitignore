@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files
+*.csv.bak
+data/raw/
+data/processed/
+
+# Outputs
+outputs/
+*.png
+*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
