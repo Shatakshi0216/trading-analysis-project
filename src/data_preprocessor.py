@@ -134,8 +134,8 @@ class DataPreprocessor:
         
         # Forward fill missing sentiment values (in case of missing dates)
         merged = merged.sort_values('timestamp')
-        merged['fear_greed_value'] = merged['fear_greed_value'].fillna(method='ffill')
-        merged['sentiment_category'] = merged['sentiment_category'].fillna(method='ffill')
+        merged['fear_greed_value'] = merged['fear_greed_value'].ffill()
+        merged['sentiment_category'] = merged['sentiment_category'].bfill()
         
         print(f"✓ Merged datasets: {len(merged)} records")
         
